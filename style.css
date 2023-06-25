@@ -38,6 +38,7 @@ background-color: white;
 box-shadow: 0 5px 8px rgba(0, 0, 0, 0.20);
 position: sticky;
 top: 0;
+z-index: 1;
 
 }
 
@@ -157,6 +158,14 @@ button.cta {
     border-radius: 10px;
     text-decoration: none;
     border-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+}
+
+a.cta:active,
+button.cta:active{
+
+    opacity: 0.7;
 
 }
 
@@ -171,6 +180,7 @@ button.cta.alt {
     padding: 20px 30px;
     border-radius: 10px;
     text-decoration: none;
+    transform: translateX(10px);
 
 }
 
@@ -184,3 +194,104 @@ font-weight: bold;
 font-size: 30px;
 margin: 30px 0;
 }
+
+.sep{
+width: 470px;
+height: 10px;
+background-color: black;
+margin: 70px auto;
+
+}
+
+.story h3{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.nb-list{
+width: 470px;
+padding: 20px 20px 0 20px;
+box-sizing: border-box;
+background-color: #f1f1f1;
+float: left;
+margin: 0 20px 20px 0;
+position: relative;
+}
+
+.highlight{
+    color: red;
+}
+
+span{
+    background-color: #FFADF9;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+
+.nb-list li{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    padding: 6px 20px;
+    box-sizing: border-box;
+}
+
+.nb-list li.blue { background-color: #007FFF;}
+.nb-list li.gray { background-color: #D7D7D7;}
+.nb-list li.yellow {
+    background-color: #FFD400;
+    color: black;}
+.nb-list li.red { background-color: red;}
+.nb-list li.pink { background-color: #FFADF9;}
+.nb-list li.salmon { background-color: salmon;}
+
+.nb-list li.dragging{
+position: absolute;
+top: 75px;
+left: 70px;
+right: -30px;
+transform: rotate(6deg);
+box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
+
+}
+
+.nb-list li.dragging:after{
+content: '';
+display: block;
+position: absolute;
+width: 54px;
+height: 50px;
+background: url(images/hand.png) no-repeat 0 0;
+background-size: 100%;
+bottom: -20px;
+left: 65%;
+}
+
+.gang-img{
+display: block;
+margin: 0 auto;
+
+}
+
+footer{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 20px;
+    margin: 85px 0 45px 0;
+    font-weight: bold;
+}
+
+footer a{
+    color: rgba(0, 0, 0, 0.40);
+
+}
+
+.popup{
+    display: none;
+}
+
